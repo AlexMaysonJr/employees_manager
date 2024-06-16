@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block title %}User Profile{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col">
+        <p>Logged in as {{ request.user }}.</p>
+        <p><a href="{% url 'logout' %}">Log Out</a></p>
+    </div>
+</div>
+{% endblock content %}
